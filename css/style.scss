@@ -6,8 +6,8 @@ $zero-percent:0%;
 
 
 #logo-image{
-	height:200px;
-	margin-left:500px
+	height:0px;
+	margin-left:100px
 }
 .navbar-color{
 	background-color:#000000;
@@ -16,22 +16,14 @@ $zero-percent:0%;
 	color:#FFFFFF !important;
 }
 .ImageGallery{
-  margin-left: $ten-percent+6%;
-  width: 10*($small-height);
-  margin-top: $ten-percent;
+  margin-left: 20px;
+  width: auto;
+  margin-top: 0px;
   backround-color:grey;
 }
-
-@media (max-width: 1340px) {
-	 #logo-image{
-        margin-left:-($ten-percent);
-	  }
-}
-
-@media (max-width: 880px) {
-	 #logo-image{
-        margin-left:$zero-percent;
-	  }
+.share-button{
+	padding-right:30px;
+	margin-top:-20px
 }
 
 /* Slider
@@ -42,8 +34,8 @@ http://www.freshdesignweb.com/drop-down-responsive-menu-with-css3-and-jquery.htm
 
 /*===== nav style ======*/
 .header-top{
-	margin-left: 18%;
 	margin-top:-1%;
+	text-align: center;
 }
 
 #fdw nav select {
@@ -321,3 +313,51 @@ a{
 .freshdesignweb-demos a.current:hover{
 	background: rgba(41,77,95,0.3);
 }
+
+/* Large Screen */
+@media only screen and (min-width:1069px) and (max-width: 1441px)  {
+   #logo-image{
+   			margin-left:100px;
+   			float:left;
+   }
+}
+
+/* Medium Screen */
+@media only screen and (min-width:736px) and (max-width: 1068px)  {
+    #logo-image{
+   			margin-left:100px;
+   			float:left;
+   }
+   .share-button{
+			margin-top:-10px
+   }
+   .header-top{
+	       text-align: center;
+	        margin-left:90px;
+   }
+}
+
+/* Small Screen */
+@media only screen and (min-width:320px) and (max-width: 735px)  {
+   #logo-image{
+   			margin-left:20px;
+   			float:left;
+   }
+   .header-top{
+	       margin-top:6px;
+	       width:120px;
+	       margin-left:200px;
+   }
+
+   .ImageGallery{
+		     margin-left: 20px;
+             width: auto;
+             margin-top: 25px;
+             backround-color:grey;
+   }
+   .share-button{
+			margin-top:-10px
+   }
+}
+
+

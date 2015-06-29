@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700|Yanone+Kaffeesatz);
 #logo-image {
-  position: relative;
   height: 0px;
   margin-left: 100px; }
 
@@ -11,25 +10,22 @@
   color: #FFFFFF !important; }
 
 .ImageGallery {
-  margin-left: 10px;
+  margin-left: 20px;
   width: auto;
-  margin-top: 5px;
-  background-color: #FFF;
-  border:0px solid}
+  margin-top: 0px;
+  backround-color: grey; }
 
-@media (max-width: 1340px) {
-  #logo-image {
-    margin-left: -10%; } }
-@media (max-width: 880px) {
-  #logo-image {
-    margin-left: 0%; } }
+.share-button {
+  padding-right: 30px;
+  margin-top: -20px; }
+
 /* Slider
 http://www.freshdesignweb.com/drop-down-responsive-menu-with-css3-and-jquery.html
 */
 /*===== nav style ======*/
 .header-top {
-  margin-left: 18%;
-  margin-top: -1%; }
+  margin-top: -1%;
+  text-align: center; }
 
 #fdw nav select {
   display: none;
@@ -297,5 +293,42 @@ a {
 .freshdesignweb-demos a.current,
 .freshdesignweb-demos a.current:hover {
   background: rgba(41, 77, 95, 0.3); }
+
+/* Large Screen */
+@media only screen and (min-width: 1069px) and (max-width: 1441px) {
+  #logo-image {
+    margin-left: 100px;
+    float: left; } }
+/* Medium Screen */
+@media only screen and (min-width: 736px) and (max-width: 1068px) {
+  #logo-image {
+    margin-left: 100px;
+    float: left; }
+
+  .share-button {
+    margin-top: -10px; }
+
+  .header-top {
+    text-align: center;
+    margin-left: 90px; } }
+/* Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 735px) {
+  #logo-image {
+    margin-left: 20px;
+    float: left; }
+
+  .header-top {
+    margin-top: 6px;
+    width: 120px;
+    margin-left: 200px; }
+
+  .ImageGallery {
+    margin-left: 20px;
+    width: auto;
+    margin-top: 25px;
+    backround-color: grey; }
+
+  .share-button {
+    margin-top: -10px; } }
 
 /*# sourceMappingURL=style.css.map */
